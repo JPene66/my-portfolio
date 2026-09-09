@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #f8fafc;
+    --bg-card: #ffffff;
+    --bg-card-hover: #f1f5f9;
+    --bg-nav: rgba(255, 255, 255, 0.85);
+    --border-color: #e2e8f0;
+    --text-heading: #0f172a;
+    --text-body: #334155;
+    --text-muted: #64748b;
+    --color-navy: #1f2a44;
+    --color-indigo: #3b4a8c;
+    --color-teal: #1ba098;
+    --color-gold: #b8860b;
+  }
+
+  .dark {
+    --bg-main: #0b101d;
+    --bg-card: #151d30;
+    --bg-card-hover: #1f2a44;
+    --bg-nav: rgba(11, 16, 29, 0.85);
+    --border-color: #263352;
+    --text-heading: #f8fafc;
+    --text-body: #cbd5e1;
+    --text-muted: #94a3b8;
+    --color-navy: #1f2a44;
+    --color-indigo: #5668b5;
+    --color-teal: #1ba098;
+    --color-gold: #d4af37;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-manrope), sans-serif;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-body);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Custom focus ring styling for accessibility */
+:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
