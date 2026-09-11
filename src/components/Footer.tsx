@@ -22,7 +22,7 @@ export default function Footer() {
         {/* Center: Social Links */}
         <div className="flex items-center gap-4 text-[var(--text-muted)]">
           <a
-            href="mailto:[EMAIL]"
+            href="mailto:clintoncaspa86@gmail.com"
             className="hover:text-[#1BA098] transition-colors p-1.5 rounded-lg hover:bg-[var(--bg-card)]"
             aria-label="Email"
           >
@@ -38,7 +38,7 @@ export default function Footer() {
             <LinkedinIcon className="w-4 h-4" />
           </a>
           <a
-            href="[GITHUB URL]"
+            href="https://github.com/JPene66"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-[#1BA098] transition-colors p-1.5 rounded-lg hover:bg-[var(--bg-card)]"
@@ -50,7 +50,7 @@ export default function Footer() {
 
         {/* Right: Credit line */}
         <div className="text-xs font-mono text-[var(--text-muted)]">
-          Built with <span className="text-[#1BA098]">Next.js</span> & <span className="text-[#3B4A8C]">Tailwind CSS</span>
+          Engineered with <span className="text-[#1BA098]">AI-first</span> thinking
         </div>
       </div>
     </footer>
