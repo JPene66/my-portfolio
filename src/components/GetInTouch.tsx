@@ -5,7 +5,6 @@ import {
   Mail,
   Send,
   ArrowUpRight,
-  Github,
   User,
   MessageSquare,
   CheckCircle2,
@@ -15,8 +14,8 @@ import {
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons/SocialIcons";
 import MagneticButton from "./MagneticButton";
-import { fadeInUp, lineDrawVariant, staggerContainer } from "@/lib/motion";
-import { useRef, useState, useEffect, FormEvent } from "react";
+import { fadeInUp, lineDrawVariant, staggerContainer, customEase } from "@/lib/motion";
+import { useRef, useState, FormEvent } from "react";
 
 // ─── Animation Variants ────────────────────────────────────────────────────────
 
@@ -29,7 +28,7 @@ const cardVariant = {
     transition: {
       delay: i * 0.1,
       duration: 0.55,
-      ease: [0.16, 1, 0.3, 1],
+      ease: customEase,
     },
   }),
 };
@@ -39,7 +38,7 @@ const orbVariant = {
   animate: {
     scale: 1,
     opacity: 1,
-    transition: { duration: 1.2, ease: [0.16, 1, 0.3, 1] },
+    transition: { duration: 1.2, ease: customEase },
   },
 };
 
@@ -47,7 +46,7 @@ const glowPulse = {
   animate: {
     opacity: [0.3, 0.7, 0.3],
     scale: [1, 1.08, 1],
-    transition: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+    transition: { duration: 4, repeat: Infinity, ease: "easeInOut" as const },
   },
 };
 
@@ -56,7 +55,7 @@ const formFieldVariant = {
   visible: (i: number) => ({
     opacity: 1,
     x: 0,
-    transition: { delay: 0.3 + i * 0.08, duration: 0.5, ease: [0.16, 1, 0.3, 1] },
+    transition: { delay: 0.3 + i * 0.08, duration: 0.5, ease: customEase },
   }),
 };
 
