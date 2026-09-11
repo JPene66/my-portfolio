@@ -1,7 +1,7 @@
 export interface ToolItem {
   id: string;
   name: string;
-  category: "ai-frameworks" | "vector-retrieval" | "eval-obs" | "prod-engineering";
+  category: "ai-frameworks" | "vector-retrieval" | "eval-obs" | "prod-engineering" | "mcp";
   categoryName: string;
   tagline: string;
   level: "Expert" | "Advanced" | "Proficient";
@@ -176,5 +176,57 @@ export const toolsData: ToolItem[] = [
     level: "Advanced",
     iconName: "Docker",
     accentColor: "#2496ED",
+  },
+
+  // MCP — Model Context Protocol
+  {
+    id: "mcp-protocol",
+    name: "Model Context Protocol",
+    category: "mcp",
+    categoryName: "MCP & Tool Use",
+    tagline: "Open standard for connecting LLMs to tools, data sources & external APIs",
+    level: "Expert",
+    iconName: "MCP",
+    accentColor: "#1BA098",
+  },
+  {
+    id: "mcp-servers",
+    name: "MCP Tool Servers",
+    category: "mcp",
+    categoryName: "MCP & Tool Use",
+    tagline: "Building & deploying custom MCP servers with resource, prompt & tool primitives",
+    level: "Expert",
+    iconName: "MCP",
+    accentColor: "#3B4A8C",
+  },
+  {
+    id: "mcp-claude-desktop",
+    name: "Claude Desktop + MCP",
+    category: "mcp",
+    categoryName: "MCP & Tool Use",
+    tagline: "Integrating local & remote MCP servers into Claude Desktop for agentic workflows",
+    level: "Advanced",
+    iconName: "Anthropic",
+    accentColor: "#D97706",
+  },
+  {
+    id: "mcp-langgraph",
+    name: "MCP + LangGraph",
+    category: "mcp",
+    categoryName: "MCP & Tool Use",
+    tagline: "Orchestrating stateful agents that consume MCP tool servers via LangGraph nodes",
+    level: "Advanced",
+    iconName: "LangChain",
+    accentColor: "#1BA098",
+  },
+  {
+    id: "mcp-openai",
+    name: "OpenAI + MCP",
+    category: "mcp",
+    categoryName: "MCP & Tool Use",
+    tagline: "Function-calling agents backed by MCP tool servers for structured, typed tool use",
+    level: "Advanced",
+    iconName: "OpenAI",
+    accentColor: "#10A37F",
   },
 ];

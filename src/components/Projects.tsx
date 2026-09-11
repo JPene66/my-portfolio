@@ -46,10 +46,10 @@ export default function Projects() {
               </p>
             </div>
 
-            <div className="text-xs font-mono text-[var(--text-muted)] bg-[var(--bg-card)] px-3.5 py-2 rounded-xl border border-[var(--border-color)] flex items-center gap-2 shadow-sm">
+            {/* <div className="text-xs font-mono text-[var(--text-muted)] bg-[var(--bg-card)] px-3.5 py-2 rounded-xl border border-[var(--border-color)] flex items-center gap-2 shadow-sm">
               <Sparkles className="w-3.5 h-3.5 text-[#1BA098]" />
               <span>Interactive 3D Tilt · Click for architecture breakdown</span>
-            </div>
+            </div> */}
           </div>
         </motion.div>
 

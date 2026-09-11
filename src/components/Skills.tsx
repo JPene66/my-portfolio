@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Wrench, Cpu, Database, Activity, Terminal } from "lucide-react";
+import { Wrench, Cpu, Database, Activity, Terminal, Plug } from "lucide-react";
 import { toolsData, ToolItem } from "@/data/tools";
 import { fadeInUp, lineDrawVariant, customEase } from "@/lib/motion";
 import {
@@ -57,7 +57,7 @@ const renderToolIcon = (iconName: string, className = "w-6 h-6") => {
   }
 };
 
-type FilterCategory = "all" | "ai-frameworks" | "vector-retrieval" | "eval-obs" | "prod-engineering";
+type FilterCategory = "all" | "ai-frameworks" | "vector-retrieval" | "eval-obs" | "prod-engineering" | "mcp";
 
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState<FilterCategory>("all");
@@ -68,6 +68,7 @@ export default function Skills() {
     { id: "vector-retrieval", label: "Vector DBs & RAG", icon: <Database className="w-3.5 h-3.5" /> },
     { id: "eval-obs", label: "Eval & Observability", icon: <Activity className="w-3.5 h-3.5" /> },
     { id: "prod-engineering", label: "Engineering & Infra", icon: <Terminal className="w-3.5 h-3.5" /> },
+    { id: "mcp", label: "MCP", icon: <Plug className="w-3.5 h-3.5" /> },
   ];
 
   const displayedTools =
