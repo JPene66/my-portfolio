@@ -65,7 +65,7 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.35, ease: customEase }}
                 className="text-lg sm:text-xl font-semibold text-[#1BA098] tracking-tight font-mono"
               >
-                AI Engineer
+                AI Developper
               </motion.p>
             </div>
 

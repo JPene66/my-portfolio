@@ -608,16 +608,16 @@ export default function GetInTouch() {
           className="flex flex-col sm:flex-row items-stretch gap-3"
         >
           <SocialCard
-            href="mailto:clintoncaspa86@gmail.com"
+            href="mailto stevejordansteve940@gmail.com"
             icon={<Mail className="w-5 h-5" />}
             accentColor="#1BA098"
             label="Direct Email"
-            sublabel="clintoncaspa86@gmail.com"
+            sublabel="stevejordansteve940@gmail.com"
             index={0}
           />
           <SocialCard
             href="https://github.com/JPene66"
-            target="_blank"
+            target="_blank" 
             rel="noopener noreferrer"
             icon={<GithubIcon className="w-5 h-5" />}
             accentColor="#94a3b8"
