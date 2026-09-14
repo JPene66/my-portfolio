@@ -45,7 +45,7 @@ export const projects: Project[] = [
   },
   {
     id: "apex-sales-agent",
-    name: "Apex — Autonomous Sales Agent",
+    name: "Apex, Autonomous Sales Agent",
     tagline: "An autonomous multi-stage agent that sources, qualifies, and closes leads — and knows when to call in a human.",
     tech: ["Python", "LangGraph", "OpenAI", "ChromaDB", "Streamlit"],
     features: [
